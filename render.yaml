@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: antautosurf-worker-template
+    runtime: docker
+    repo: https://github.com/tuo-username/antautosurf-worker-factory
+    plan: starter
+    envVars:
+      - key: EMAIL
+        value: ""
+      - key: PASSWORD
+        value: ""
+      - key: PROXY
+        value: ""
+      - key: HEADLESS
+        value: "true"
